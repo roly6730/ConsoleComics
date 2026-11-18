@@ -49,6 +49,34 @@ System.out.println("Return Deadline: " + returnDate);
 System.out.println("Borrowing Period: 7 Days");
 
 System.out.println("\n[WARNING] Please return your comic book on time!");
+                        class Comic {
+    int id;
+    String title;
+    String author;
+    int totalCopies;
+    int availableCopies;
+
+    Comic(int id, String title, String author,
+          int totalCopies, int availableCopies) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.totalCopies = totalCopies;
+        this.availableCopies = availableCopies;
+    }
+
+    void borrowCopy() {
+        if (availableCopies > 1) {
+            availableCopies--;
+        }
+    }
+
+    void returnCopy() {
+        if (availableCopies < totalCopies) {
+            availableCopies++;
+        }
+    }
+}
                 
                 }
             }
