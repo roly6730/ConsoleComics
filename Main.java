@@ -40,12 +40,15 @@ public class Main {
     DateTimeFormatter format =
         DateTimeFormatter.ofPattern("MMM dd, yyyy");
 
-    System.out.println("\n===== BORROWING INFORMATION =====");
-    System.out.println("Borrow Date: " + borrowDate.format(format));
-    System.out.println("Return Deadline: " + returnDate.format(format));
-    System.out.println("Borrowing Period: 3 Days");
-    System.out.println("Please return your comic book on time!");
+    System.out.println("\n[SUCCESS] You have successfully borrowed: "
+                   + comicTitle);
 
+System.out.println("\n===== BORROWING INFORMATION =====");
+System.out.println("Borrow Date: " + borrowDate);
+System.out.println("Return Deadline: " + returnDate);
+System.out.println("Borrowing Period: 7 Days");
+
+System.out.println("\n[WARNING] Please return your comic book on time!");
                 
                 }
             }
