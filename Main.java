@@ -33,54 +33,7 @@ public class Main {
                     System.out.println("\nWelcome, " + student[i]);
                     System.out.println("Login time: " + loginTime);
                     showMenu();
-                    static void borrowingDeadline() {
-    LocalDate borrowDate = LocalDate.now();
-    LocalDate returnDate = borrowDate.plusDays(3);
-
-    DateTimeFormatter format =
-        DateTimeFormatter.ofPattern("MMM dd, yyyy");
-
-    System.out.println("\n[SUCCESS] You have successfully borrowed: "
-                   + comicTitle);
-
-System.out.println("\n===== BORROWING INFORMATION =====");
-System.out.println("Borrow Date: " + borrowDate);
-System.out.println("Return Deadline: " + returnDate);
-System.out.println("Borrowing Period: 7 Days");
-
-System.out.println("\n[WARNING] Please return your comic book on time!");
-                        class Comic {
-    int id;
-    String title;
-    String author;
-    int totalCopies;
-    int availableCopies;
-
-    Comic(int id, String title, String author,
-          int totalCopies, int availableCopies) {
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.totalCopies = totalCopies;
-        this.availableCopies = availableCopies;
-    }
-
-    void borrowCopy() {
-        if (availableCopies > 1) {
-            availableCopies--;
-        }
-    }
-
-    void returnCopy() {
-        if (availableCopies < totalCopies) {
-            availableCopies++;
-        }
-    }
-}
-                
-                }
-            }
-        }
+    
         input.close();
     }
     static void showMenu(){
