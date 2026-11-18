@@ -33,6 +33,20 @@ public class Main {
                     System.out.println("\nWelcome, " + student[i]);
                     System.out.println("Login time: " + loginTime);
                     showMenu();
+                    static void borrowingDeadline() {
+    LocalDate borrowDate = LocalDate.now();
+    LocalDate returnDate = borrowDate.plusDays(3);
+
+    DateTimeFormatter format =
+        DateTimeFormatter.ofPattern("MMM dd, yyyy");
+
+    System.out.println("\n===== BORROWING INFORMATION =====");
+    System.out.println("Borrow Date: " + borrowDate.format(format));
+    System.out.println("Return Deadline: " + returnDate.format(format));
+    System.out.println("Borrowing Period: 3 Days");
+    System.out.println("Please return your comic book on time!");
+
+                
                 }
             }
         }
